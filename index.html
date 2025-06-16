@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- Define o tipo do documento como HTML5 -->
+<html lang="pt-br">
+  <!-- Define o idioma da página como Português do Brasil -->
+  <head>
+    <!-- Define o conjunto de caracteres como UTF-8 (aceita acentuação, por exemplo) -->
+    <meta charset="UTF-8" />
+
+    <!-- Torna o layout responsivo, ajustando o conteúdo à largura da tela do dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Compatibilidade com versões antigas do Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Título que aparece na aba do navegador -->
+    <title>Login</title>
+
+    <!-- Link para o arquivo de estilos CSS externo -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Link para a biblioteca de ícones Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <main>
+      <!-- Título principal da página -->
+      <h1>Login</h1>
+
+      <!-- Início do formulário de login -->
+      <form action="#" class="form">
+        <!-- Campo de nome de usuário -->
+        <div class="info-login-container">
+          <input
+            type="text"
+            placeholder="Nome de Usuario"
+            name="name"
+            required
+          />
+          <!-- Ícone de usuário ao lado do input -->
+          <i class="fa-solid fa-user"></i>
+        </div>
+
+        <!-- Campo de senha -->
+        <div class="info-login-container">
+          <input type="password" placeholder="Senha" name="senha" required />
+          <!-- Ícone de cadeado ao lado do input -->
+          <i class="fa-solid fa-lock"></i>
+        </div>
+
+        <!-- Opção de lembrar a senha e link para recuperar a senha -->
+        <div class="check-password-container">
+          <label for="checkbox">
+            <input type="checkbox" id="lembrarSenha" name="lembrar" />
+            Lembrar
+          </label>
+          <a href="/">Esqueci minha senha</a>
+        </div>
+
+        <!-- Botão para enviar o formulário -->
+        <button type="submit">Login</button>
+
+        <!-- Link para registrar uma nova conta -->
+        <div class="register">
+          <p>Não tem uma conta? <a href="/">Registrar</a></p>
+        </div>
+      </form>
+      <!-- Fim do formulário -->
+    </main>
+  </body>
+</html>

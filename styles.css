@@ -1,0 +1,177 @@
+/* Importa duas fontes do Google Fonts: Montserrat e Orbitron */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap");
+
+/* Aplica estilo base para todos os elementos da página */
+* {
+  margin: 0; /* Remove margem padrão */
+  padding: 0; /* Remove espaçamento interno padrão */
+  box-sizing: border-box; /* Faz com que o padding e border não aumentem o tamanho real do elemento */
+  font-family: Montserrat, sans-serif; /* Aplica a fonte Montserrat como padrão */
+}
+
+/* Estiliza o corpo da página */
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(9, 9, 121, 1) 0%,
+    /* Azul escuro no topo */ rgba(0, 119, 143, 1) 100% /* Azul claro na base */
+  );
+  min-height: 100vh; /* Ocupa no mínimo 100% da altura da tela */
+  display: flex; /* Centraliza conteúdo com Flexbox */
+  justify-content: center; /* Alinha horizontalmente */
+  align-items: center; /* Alinha verticalmente */
+}
+
+/* Container principal */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Empilha os elementos verticalmente */
+  width: 350px;
+  background-color: rgba(255, 255, 255, 0.12); /* Fundo semi-transparente */
+  backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 11px 6px 28px 8px rgba(0, 0, 0, 0.59); /* Sombra */
+  border: 1px solid rgba(255, 255, 255, 0.18); /* Borda suave */
+  padding: 20px;
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+/* Formulário de login */
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Container de cada campo de input */
+.info-login-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+/* Input de texto e senha */
+.info-login-container input {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  padding-left: 20px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5); /* Fundo claro e translúcido */
+}
+
+/* Ícone do lado direito do campo */
+.info-login-container i {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #333;
+}
+
+/* Estilo ao focar no campo */
+.info-login-container input:focus {
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+/* Estilo do texto do placeholder */
+.info-login-container input::placeholder {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+}
+
+/* Container da área do checkbox e link de "esqueci a senha" */
+.check-password-container {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 0 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+/* Estilo do checkbox e texto */
+.check-password-container label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-weight: 600;
+}
+
+/* Cor do checkbox */
+.check-password-container label input {
+  accent-color: rgb(
+    9,
+    9,
+    121,
+    1
+  ); /* Define a cor do checkbox (em navegadores que suportam) */
+}
+
+/* Link "esqueci minha senha" */
+.check-password-container a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Efeito ao passar o mouse no link */
+.check-password-container a:hover {
+  text-decoration: underline;
+}
+
+/* Botão de login */
+button {
+  margin-bottom: 30px;
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Animação ao passar o mouse no botão */
+button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.4);
+  color: rgb(9, 9, 121, 1);
+  transform: translateY(-4px); /* Faz o botão "subir" levemente */
+}
+
+/* Estilo de parágrafos */
+p {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Estilo dos links dentro de <p> */
+p a {
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Efeito ao passar o mouse nos links de <p> */
+p a:hover {
+  text-decoration: underline;
+}
