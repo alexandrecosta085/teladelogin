@@ -7,7 +7,7 @@ const loginAlert = document.querySelector("#login-alert");
 submitButton.addEventListener("click", function (event) {
   event.preventDefault();
 
-  if (usernameInput.value === "" && passwordInput.value === "") {
+  if (usernameInput.value === "" || passwordInput.value === "") {
     errorAlert.classList.remove("hidden-error");
 
     setTimeout(() => {
