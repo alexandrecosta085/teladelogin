@@ -56,7 +56,13 @@
 
         <!-- Campo de senha -->
         <div class="info-login-container">
-          <input type="password" placeholder="Senha" name="senha" required />
+          <input
+            type="password"
+            id="user-password"
+            placeholder="Senha"
+            name="senha"
+            required
+          />
           <!-- Ícone de cadeado ao lado do input -->
           <i class="fa-solid fa-lock"></i>
         </div>
@@ -64,12 +70,7 @@
         <!-- Opção de lembrar a senha e link para recuperar a senha -->
         <div class="check-password-container">
           <label for="lembrarSenha">
-            <input
-              id="user-password"
-              type="checkbox"
-              id="lembrarSenha"
-              name="lembrar"
-            />
+            <input type="checkbox" id="lembrarSenha" name="lembrar" />
             Lembrar
           </label>
           <a href="/">Esqueci minha senha</a>
