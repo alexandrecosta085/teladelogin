@@ -35,9 +35,16 @@
 
       <!-- Início do formulário de login -->
       <form action="#" class="form">
+        <div id="error-alert" class="error-alert hidden-error">
+          <p>Por favor, preencha todos os campos.</p>
+        </div>
+        <div id="login-alert" class="login-alert hidden-success">
+          <p>Login Efetuado!</p>
+        </div>
         <!-- Campo de nome de usuário -->
         <div class="info-login-container">
           <input
+            id="user-name"
             type="text"
             placeholder="Nome de Usuario"
             name="name"
@@ -57,14 +64,19 @@
         <!-- Opção de lembrar a senha e link para recuperar a senha -->
         <div class="check-password-container">
           <label for="lembrarSenha">
-            <input type="checkbox" id="lembrarSenha" name="lembrar" />
+            <input
+              id="user-password"
+              type="checkbox"
+              id="lembrarSenha"
+              name="lembrar"
+            />
             Lembrar
           </label>
           <a href="/">Esqueci minha senha</a>
         </div>
 
         <!-- Botão para enviar o formulário -->
-        <button type="submit">Login</button>
+        <button id="submit-btn" type="submit">Login</button>
 
         <!-- Link para registrar uma nova conta -->
         <div class="register">
@@ -73,5 +85,6 @@
       </form>
       <!-- Fim do formulário -->
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

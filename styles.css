@@ -175,3 +175,22 @@ p a {
 p a:hover {
   text-decoration: underline;
 }
+
+.hidden-error {
+  display: none;
+}
+
+.error-alert p {
+  color: red;
+  font-weight: 600;
+  text-align: center;
+}
+.hidden-success {
+  display: none;
+}
+
+.login-alert p {
+  color: green;
+  font-weight: 600;
+  text-align: center;
+}
