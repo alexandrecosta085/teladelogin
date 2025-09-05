@@ -18,6 +18,7 @@ Este é um projeto simples de uma página de login responsiva, construída utili
 
 - **HTML5**: Para a estrutura da página.
 - **CSS3**: Para a estilização e responsividade.
+- **JavaScript**: Para autenticação do Login.
 - **Font Awesome**: Para os ícones.
 - **Google Fonts**: Para as fontes 'Montserrat' e 'Orbitron'.
 
@@ -39,5 +40,6 @@ Este é um projeto simples de uma página de login responsiva, construída utili
 .
 ├── index.html
 ├── styles.css
+└── script.js
 └── README.md
 ```
